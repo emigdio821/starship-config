@@ -12,12 +12,16 @@ $cmd_duration$time\
 $line_break\
 $character"""
 
+add_newline = false
+
 # Replace the '❯' symbol in the prompt with '↳'
 [character]
 success_symbol = "[↳](yellow)"
+error_symbol = "[↳](red)"
 
 [git_branch]
-symbol = "🌱 "
+# symbol = "🌱 "
+format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [battery]
 full_symbol = "• "
